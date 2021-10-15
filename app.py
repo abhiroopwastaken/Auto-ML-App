@@ -1,7 +1,3 @@
-# App created by Data Professor http://youtube.com/dataprofessor
-# GitHub repo of this app https://github.com/dataprofessor/ml-auto-app
-# Demo of this app https://share.streamlit.io/dataprofessor/ml-auto-app/main/app.py
-
 import streamlit as st
 import pandas as pd
 from lazypredict.Supervised import LazyRegressor
@@ -16,12 +12,12 @@ import io
 #---------------------------------#
 # Page layout
 ## Page expands to full width
-st.set_page_config(page_title='The Machine Learning Algorithm Comparison App',
+st.set_page_config(page_title='The Auto Machine Learning Algorithm Comparison App',
     layout='wide')
 #---------------------------------#
 # Model building
 def build_model(df):
-    df = df.loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+    df = df.loc[:100] 
     X = df.iloc[:,:-1] # Using all column except for the last column as X
     Y = df.iloc[:,-1] # Selecting the last column as Y
 
@@ -104,7 +100,7 @@ def build_model(df):
     st.markdown(imagedownload(plt,'plot-calculation-time-wide.pdf'), unsafe_allow_html=True)
 
 # Download CSV data
-# https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
+
 def filedownload(df, filename):
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
@@ -121,11 +117,11 @@ def imagedownload(plt, filename):
 
 #---------------------------------#
 st.write("""
-# The Machine Learning Algorithm Comparison App
+# The Auto Machine Learning Algorithm Comparison App
 
 In this implementation, the **lazypredict** library is used for building several machine learning models at once.
 
-Developed by: [Data Professor](http://youtube.com/dataprofessor)
+Developed by: Abhiroop Agarwal (101803109)
 
 """)
 
@@ -134,7 +130,7 @@ Developed by: [Data Professor](http://youtube.com/dataprofessor)
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
+[Example CSV input file](https://raw.githubusercontent.com/abhiroopwastaken/EDA-app/main/winequality.csv)
 """)
 
 # Sidebar - Specify parameter settings

@@ -1,42 +1,60 @@
-# ml-auto-app
+# The Auto Machine Learning Algorithm Comparison App
+A web app to perform multiple machine learning alogortihms on user uploaded file.
 
-# Demo
+The app can be visited at https://auto-ml-strmlt.herokuapp.com/
 
-Launch the web app:
+# About the App
+This app is able to provide detailed analysis of multiple machine learning models on user uploaded file using lazypredictor library.Bouston house dataset is used for illustration Wine quality dataset has been provided in the app.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/ml-auto-app/main/app.py)
+This includes:
+- Overview
+- Detailed Variable description
+- Interaction between any 2 specified Varibles
+- Correlations
+  - Pearson's r
+  - Spearman's ρ
+  - Kendall's τ
+  - Phik (φk)
+- Missing and Duplicate Values
 
-# Reproducing this web app
-To recreate this web app on your own computer, do the following.
+# Screenshots of the web app:
 
-### Create conda environment
-Firstly, we will create a conda environment called *lazypredict*
-```
-conda create -n lazypredict python=3.7.9
-```
-Secondly, we will login to the *lazypredict* environement
-```
-conda activate lazypredict
-```
-### Install prerequisite libraries
+<table style="width:100%">
+  <tr>
+    <th><img src="img/ss1.png" /></th>
+    <th><img src="img/ss2.png" /></th>
+  </tr>
+  <tr>
+    <th><img src="img/ss3.png" /></th>
+    <th><img src="img/ss4.png" /></th>
+  </tr>
+  <tr>
+    <th><img src="img/ss5.png" /></th>
+    <th><img src="img/ss6.png" /></th>
+  </tr>
+  <tr>
+    <th><img src="img/ss7.png" /></th>
+    <th><img src="img/ss8.png" /></th>
+  </tr>
+  <tr>
+    <th><img src="img/ss9.png" width=200/></th>
+    <th><img src="img/ss10.png" width=200/></th>
+  </tr>
+ </table>
+ 
+ 
+ # Flow Chart
+ 
+ <table style="width:100%" align="center">
+  <tr>
+    <th><img src="img/flow.png"height=500 width=250/></th>
+  </tr>
+ </table>
 
-Download requirements.txt file
+#  Data Source
 
-```
-wget https://raw.githubusercontent.com/dataprofessor/ml-auto-app/main/requirements.txt
+Wine Quality Dataset from the UCI Machine Learning Repository.
 
-```
-
-Pip install libraries
-```
-pip install -r requirements.txt
-```
-###  Download and unzip contents from GitHub repo
-
-Download and unzip contents from https://github.com/dataprofessor/ml-auto-app/archive/main.zip
-
-###  Launch the app
-
-```
-streamlit run app.py
-```
+P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+ 
