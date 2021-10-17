@@ -1,44 +1,38 @@
 # The Auto Machine Learning Algorithm Comparison App
 A web app to perform multiple machine learning alogortihms on user uploaded file.
 
-The app can be visited at https://auto-ml-strmlt.herokuapp.com/
+The app can be visited at https://auto-ml-compare-app.herokuapp.com/
 
 # About the App
-This app is able to provide detailed analysis of multiple machine learning models on user uploaded file using lazypredictor library.Bouston house dataset is used for illustration Wine quality dataset has been provided in the app.
+This app is able to provide detailed comparison of multiple machine learning models on user uploaded file using **lazypredict** library. Bouston house dataset is used for illustration. Wine quality dataset has also been provided in the app.
 
-This includes:
-- Overview
-- Detailed Variable description
-- Interaction between any 2 specified Varibles
-- Correlations
-  - Pearson's r
-  - Spearman's ρ
-  - Kendall's τ
-  - Phik (φk)
-- Missing and Duplicate Values
+The App includes:
+- Overview of Dataset
+- Option to upload your own dataset
+- Sliders of changing the set parameters:
+  - Data split ratio
+  - Randomn seed number
+- Detailed description of ML algorithm used
+- Comparison criteria:
+  - R-Square
+  - RMSE
+  - Calculation Time
+- Option to download training, test files along with R2, RMSE and time taken plots
 
 # Screenshots of the web app:
 
 <table style="width:100%">
   <tr>
-    <th><img src="img/ss1.png" /></th>
-    <th><img src="img/ss2.png" /></th>
+    <th><img src="img/1.png" /></th>
+    <th><img src="img/2.png" /></th>
   </tr>
   <tr>
-    <th><img src="img/ss3.png" /></th>
+    <th><img src="img/3.png" /></th>
     <th><img src="img/ss4.png" /></th>
   </tr>
   <tr>
-    <th><img src="img/ss5.png" /></th>
-    <th><img src="img/ss6.png" /></th>
-  </tr>
-  <tr>
-    <th><img src="img/ss7.png" /></th>
-    <th><img src="img/ss8.png" /></th>
-  </tr>
-  <tr>
-    <th><img src="img/ss9.png" width=200/></th>
-    <th><img src="img/ss10.png" width=200/></th>
+    <th><img src="img/5.png" /></th>
+    <th><img src="img/6.png" /></th>
   </tr>
  </table>
  
@@ -47,7 +41,7 @@ This includes:
  
  <table style="width:100%" align="center">
   <tr>
-    <th><img src="img/flow.png"height=500 width=250/></th>
+    <th><img src="img/flowchart.png"height=500 width=250/></th>
   </tr>
  </table>
 
