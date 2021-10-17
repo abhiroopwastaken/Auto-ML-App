@@ -41,7 +41,7 @@ The App includes:
  
  <table style="width:100%" align="center">
   <tr>
-    <th><img src="img/flowchart.png"height=500 width=250/></th>
+    <th><img src="img/flowchart.png"/></th>
   </tr>
  </table>
 
