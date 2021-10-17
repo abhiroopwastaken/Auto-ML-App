@@ -11,7 +11,7 @@ The App includes:
 - Option to upload your own dataset
 - Sliders of changing the set parameters:
   - Data split ratio
-  - Randomn seed number
+  - Random seed number
 - Detailed description of ML algorithm used
 - Comparison criteria:
   - R-Square
@@ -28,7 +28,7 @@ The App includes:
   </tr>
   <tr>
     <th><img src="img/3.png" /></th>
-    <th><img src="img/ss4.png" /></th>
+    <th><img src="img/4.png" /></th>
   </tr>
   <tr>
     <th><img src="img/5.png" /></th>
